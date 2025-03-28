@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copy the local project files into the container
-COPY actions-test/basic-program /app
+COPY actions-test/basic-program/ /app/
 
 # Run make to build the project
 # RUN make
