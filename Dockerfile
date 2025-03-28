@@ -16,10 +16,10 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory in the container
-WORKDIR ~/app
+WORKDIR /app
 
 # Copy the local project files into the container
-COPY actions-test/basic-program ~/app
+COPY actions-test/basic-program /app
 
 # Run make to build the project
 # RUN make
